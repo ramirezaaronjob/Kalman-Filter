@@ -1,0 +1,34 @@
+READ ME----------
+
+PROJECT 1
+CPE 470
+AARON RAMIREZ
+
+I used professor's code to do this project and I implemented my kalman filter based on the formula.
+To run the code:
+
+I used Matlab online in my web browser to run the code.
+Full Source code can be found in main.m
+
+APPENDIX:
+
+Date file name: EKF_DATA_circle.txt
+Data header: 
+%time,field.O_x,field.O_y,field.O_t,field.I_t,field.Co_I_t,field.G_x,field.G_y,field.C
+o_gps_x,field.Co_gps_y
+Where: 
+%time is time index
+Odometry or Encoder data from Seekur Mobile robot
+field.O_x is Odometry data in x direction/coordinate of the robot
+field.O_y is Odometry data in y direction/coordinate of the robot
+field.O_t is Odometry data of the orientation or heading of the robot
+(For the covariance of the Odometry data you can give a specific number, for 
+example: 0.001.)
+Data from Microstrain IMU attached on the robot
+field.I_t is IMU data of the orientation or heading of the robot
+field.Co_I_t  is the IMU data of the Covariance of the orientation of the robot
+Novatel DGPS  data attached on the robot
+field.G_x is GPS data in x direction/coordinate of the robot
+field.G_y is GPS data in y direction/coordinate of the robot
+field.Co_gps_x is GPS data of the Covariance in x direction of the robot
+field.Co_gps_y is GPS data of the Covariance in y direction of the robot
